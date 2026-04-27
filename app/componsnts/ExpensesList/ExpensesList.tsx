@@ -7,8 +7,8 @@ const DATA = [
     {id: '4', name: 'Light', price: 132, date: '04.01.2026'},
     {id: '5', name: 'Restaurant', price: 125, date: '05.01.2026'},
 ]
-export const ExpensesList = () => {
-    return <FlatList data={DATA} renderItem={({item}) => <Text>{item.name}</Text>} />
+ const ExpensesList = () => {
+    return <FlatList data={DATA} renderItem={({item}) => <Text>{item.name}</Text>} keyExtractor={(item) => item.id} />
 }
 
 export default ExpensesList

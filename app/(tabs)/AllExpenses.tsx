@@ -1,8 +1,9 @@
-import { Text, View } from "react-native"
+import { View } from "react-native"
+import ExpensesList from "../componsnts/ExpensesList/ExpensesList"
 
 const AllExpense = () => {
     return <View>
-        <Text>All expenses!</Text>
+        <ExpensesList />
     </View>
 }
 
